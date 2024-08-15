@@ -1,0 +1,43 @@
+{
+  "ignorePatterns": ["vite.config.ts"],
+  "extends": ["eslint:recommended", "prettier"],
+  "env": {
+    "es2022": true,
+    "browser": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+      ],
+      "plugins": ["prettier"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": 0,
+        "import/no-extraneous-dependencies": 0,
+        "import/no-cycle": 0,
+        "import/no-unresolved": 0,
+        "no-use-before-define": 0,
+        "@typescript-eslint/no-redeclare": 0,
+        "no-underscore-dangle": 0,
+        "no-plusplus": 0,
+        "no-nested-ternary": 0,
+        "react-hooks/rules-of-hooks": "warn",
+        "prettier/prettier": ["error"]
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+    }
+  ]
+}

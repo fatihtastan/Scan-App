@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../src/fonts/sfMedium.OTF') format('truetype');
+}
+
+body {
+  display: block;
+
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+
+  font-family: 'SF Pro Display', sans-serif;
+
+  background: #f5f5f7;
+}

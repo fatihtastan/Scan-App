@@ -1,0 +1,12 @@
+.tabContent {
+  width: 100%;
+  max-width: 1440px;
+  height: 613px;
+}
+
+@media (width <=768px) {
+  .tabContent {
+    height: 613px;
+    padding-top: 56px;
+  }
+}

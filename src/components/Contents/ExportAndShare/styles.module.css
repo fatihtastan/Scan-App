@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  font-weight: bold;
+  font-style: bold;
+  src: url('../../../fonts/SF-Pro-Display-Bold.otf') format('truetype');
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  order: 2;
+
+  width: 365px;
+  height: auto;
+  margin-top: 70px;
+}
+
+.image {
+  width: 230px;
+  height: 300px;
+}
+
+.textContainer {
+  order: 1;
+  max-width: 600px;
+}
+
+.arrow {
+  position: absolute;
+  top: 250px;
+  left: -30px;
+
+  width: 23.24px;
+  height: 15.53px;
+}
+
+.pdf {
+  position: absolute;
+  top: 185px;
+  left: -20px;
+
+  width: 72.1px;
+  height: auto;
+}
+
+.jpg {
+  position: absolute;
+  top: 170px;
+  left: 80px;
+
+  width: 71.78px;
+  height: auto;
+}
+
+.txt {
+  position: absolute;
+  top: 185px;
+  left: 180px;
+
+  width: 71.46px;
+  height: auto;
+}
+
+.title {
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.09px;
+  color: #0073e6;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  margin: 0;
+
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0b122a;
+}
+
+.description {
+  margin: 20px 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #0b172a;
+  letter-spacing: 0.8px;
+}
+
+.learnMoreButton {
+  cursor: pointer;
+
+  padding: 11px 15px;
+
+  font-size: 14.8px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #0b122a;
+
+  background: transparent;
+  border: 0.5px solid #00000029;
+}
+
+@media (width >= 768px) {
+  .container {
+    flex-direction: row;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .image {
+    width: 365px;
+    height: 546px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 400px;
+    left: -50px;
+
+    width: 35.8px;
+    height: 30px;
+  }
+
+  .pdf {
+    position: absolute;
+    top: 305px;
+    left: -20px;
+
+    width: 130px;
+    height: auto;
+  }
+
+  .jpg {
+    position: absolute;
+    top: 290px;
+    left: 120px;
+
+    width: 111px;
+    height: auto;
+  }
+
+  .txt {
+    position: absolute;
+    top: 305px;
+    left: 280px;
+
+    width: 130px;
+    height: auto;
+  }
+
+  .imageContainer {
+    order: 1;
+    width: 50%;
+    margin-top: auto;
+  }
+
+  .textContainer {
+    order: 2;
+    width: 50%;
+  }
+
+  .title,
+  .subtitle,
+  .description {
+    text-align: right;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .learnMoreButton {
+    cursor: pointer;
+
+    padding: 15px 20px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.87px;
+    color: #0b122a;
+
+    background: transparent;
+    border: 0.5px solid #00000029;
+  }
+}
